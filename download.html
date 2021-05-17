@@ -82,13 +82,21 @@ pre {
                 <h4><a href="download.html" class="section-title" download><i class="fa fa-download"></i> Release 1.0(05-2021)</a></h4>
                 <div style="border:0px">
                 <h4> TSS 100 </h4>
-                        <p class="text-left wow fadeInUp animated">In this release, we include:</p>
-                <ul>
+                        <p class="text-left wow fadeInUp animated">
+			The Traffic Situation Similarity Dataset contains almost 7000 video clips sampled from the Berkeley DeepDrive Dataset.
+			Each sample consists of a base video clip and 6 candidate clips. The candidate clips have been ranked by human evaluators from most similar to the base clip to least similar. The clips differ in length, with the shortest being 1 second and the longest being 40 seconds.
+			</p>
+                <!--<ul>
                   <li> 200 activity classes </li>
                   <li> 10,024 training videos (15,410 instances) </li>
                   <li> 4,926 validation videos (7,654 instances) </li>
                   <li> 5,044 testing videos (labels withheld) </li>
                 </ul>
+			-->
+                <h4> Data Format </h4>
+                        <p class="text-left wow fadeInUp animated">
+			The file TSS.csv records the samples. Each row is a single sample with a base clip and 6 comparison clips. Each cell contains a number that corresponds to the clip with that number as its file name: e.g., in sample 0 the base clip is the video 15096.mp4. The candidate clips have been labeled as to their order: "MostSimilar" is the clip most similar to the base clip, "2ndSimilar" is the second most similar, and so on. In sample 0 the most similar clip is 14293.mp4 and the second most similar clip is 23555.mp4.
+			</p>
 		</div>
         </div>
 	    
